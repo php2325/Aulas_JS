@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <!-- Responsive Meta Tag -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Faviicon  Tag -->
+    <!-- <link rel="icon" href="https://www.w3schools.com/favicon.ico"  type="image/x-icon"> -->
+    <link rel="icon" type="image/jpg" href="favicon.jpg">
+    <link rel="stylesheet" href="estilo.css">
+    <title>DS: CRIANDO AS TURMAS DE DESENVOLVIMENTO DE SISTEMAS</title>
+    <meta name="description" content="Aplicação para ...">
+    <meta name="keywords" content="ds, desenvolvimento de sistemas">
+    <meta name="autor" content="Pedro Henrique 11910173490, petdb24php@gmail.com">
+
+<body>
+    <h1><mark>MANIPULANDO ELEMENTOS (TAGS)</mark>DO HTML ATRAVES DO JS</h1>
+    <hr>
+    <div>
+        <p>bla bla bla bli bli bli blu blu blu</p>
+        <P>ablublublublublublublublublu</P>
+        <p>liganguliguli wacha liganguligangu (infinitas vezes)</p>
+    </div>
+    <script>
+        const tags_p = document.getElementsByTagName('p');
+        console.log(tags_p);
+        let tag_p_1 = tags_p[0];
+
+        tag_p_1.style.backgroundColor = "purple";
+        tag_p_1.style.color = "white";
+
+        const tags_p01 = document.getElementsByTagName('p');
+        console.log(tags_p);
+        let tag_p_2 = tags_p01[1];
+
+        tag_p_2.style.backgroundColor = "red";
+        tag_p_2.style.color = "white";
+
+        const tags_p02 = document.getElementsByTagName('p');
+        console.log(tags_p);
+        let tag_p_3 = tags_p[2];
+
+        tag_p_3.style.backgroundColor="gold";
+        tag_p_3.style.color="white";
+    </script>
+</body>
+
+</html>

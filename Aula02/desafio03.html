@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <!-- Responsive Meta Tag -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Faviicon  Tag -->
+    <!-- <link rel="icon" href="https://www.w3schools.com/favicon.ico"  type="image/x-icon"> -->
+    <link rel="icon" type="image/jpg" href="favicon.jpg">
+    <link rel="stylesheet" href="estilo.css">
+    <title>DS: CRIANDO AS TURMAS DE DESENVOLVIMENTO DE SISTEMAS</title>
+    <meta name="description" content="Aplicação para ...">
+    <meta name="keywords" content="ds, desenvolvimento de sistemas">
+    <meta name="autor" content="Pedro Henrique 11910173490, petdb24php@gmail.com">
+
+<body>
+    <h1><mark>MANIPULANDO ELEMENTOS (TAGS)</mark>DO HTML ATRAVES DO JS</h1>
+    <hr>
+    <div>
+        <p>bla bla bla bli bli bli blu blu blu</p>
+        <P>ablublublublublublublublublu</P>
+        <p>liganguliguli wacha liganguligangu (infinitas vezes)</p>
+    </div>
+    <img src="img/imagem2.jpg" alt="ITADORI YUJI!!!">
+    <script>
+        const tags_bd = document.getElementsByTagName('body');
+        let tag_body = tags_bd[0];
+        const tags_div = document.getElementsByTagName('div');
+        let tag_div = tags_div[0];
+        const tags_p = document.getElementsByTagName('p');
+        let tag_p_1 = tags_p[0];
+        let tag_p_2 = tags_p[1];
+        let tag_p_3 = tags_p[2];
+        const tags_img = document.getElementsByTagName('img');
+        let tag_img = tags_img[0];
+        tag_img.src = "img/imagem2.jpg"
+        tag_img.title = "ITADORI YUJI!!!"
+        
+
+        //BODY
+        tag_body.style.background = "blue"
+        tag_body.style.color = "white"
+
+        //DIV
+        tag_div.style.border = "5px";
+        tag_div.style.padding = "10px";
+        tag_div.style.borderStyle = "solid";
+        tag_div.style.borderColor = "red";
+
+        //Ps
+        tag_p_1.style.background = "purple"
+        tag_p_2.style.background = "purple"
+        tag_p_3.style.background = "purple"
+
+        const novo_p = document.createElement("p");
+        novo_p.innerHTML = "Eu fui adicionado totalmente por forma dinamica"
+        tag_div.appendChild(novo_p)
+
+        document.write('<h2>NOOOOOSSSSAAAA, <mark>JAVASCRIPT E MUITO LEGAL!</mark></h2>')
+    </script>
+</body>
+
+</html>
