@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <!-- Responsive Meta Tag -->
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <!-- Faviicon  Tag -->
+    <!-- <link rel="icon" href="https://www.w3schools.com/favicon.ico"  type="image/x-icon"> -->
+    <link rel="icon" type="image/jpg" href="favicon.jpg">
+    <link rel="stylesheet" href="estilo.css">
+    <title>DS: CRIANDO AS TURMAS DE DESENVOLVIMENTO DE SISTEMAS</title>
+    <meta name="description" content="Aplicação para ...">
+    <meta name="keywords" content="ds, desenvolvimento de sistemas">
+    <meta name="autor" content="Pedro Henrique 11910173490, petdb24php@gmail.com">
+<body>
+    <h1>Integrando os recursos de interatividade do JS</h1>
+    <hr>
+    <script>
+        window.alert("Seja bem-vindo(a) ao site!");
+        let nome = window.prompt("Qual e o seu nome? ");
+        window.alert(nome);
+        console.log(nome);
+        let resposta = window.confirm("Você deseja sair da pagina? ")
+        console.log(resposta)
+        document.write("SEJA BEM-VINDO! "+ nome);
+
+        if(resposta==true){
+            setTimeout(() => {
+                window.open("index.html");
+            }, 3000);
+        }else{
+            window.confirm(nome + ", você vai continuar nessa pagina!");
+        }
+    </script>
+</body>
+
+</html>

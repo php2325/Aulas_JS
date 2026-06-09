@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <!-- Responsive Meta Tag -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Faviicon  Tag -->
+    <!-- <link rel="icon" href="https://www.w3schools.com/favicon.ico"  type="image/x-icon"> -->
+    <link rel="icon" type="image/jpg" href="favicon.jpg">
+    <link rel="stylesheet" href="estilo.css">
+    <title>DS: CRIANDO AS TURMAS DE DESENVOLVIMENTO DE SISTEMAS</title>
+    <meta name="description" content="Aplicação para ...">
+    <meta name="keywords" content="ds, desenvolvimento de sistemas">
+    <meta name="autor" content="Pedro Henrique 11910173490, petdb24php@gmail.com">
+
+<body>
+    <h1>Desafio 1</h1>
+    <hr>
+    <script>
+        let num1 = window.prompt("Digite o primeiro número: ")
+        num1 = parseFloat(num1)
+        let num2 = window.prompt("Digite o segundo número: ")
+        num2 = parseFloat(num2)
+        let operacao = window.prompt("Digite a operação (+) ou (-)")
+
+        console.log(num1, operacao, num2)
+        if (operacao == "+") {
+            let resultado = num1 + num2
+            window.alert(resultado)
+            console.log(resultado)
+        }
+        else if (operacao == "-") {
+            let resultado = num1 - num2
+            window.alert(resultado)
+            console.log(resultado)
+        } else { window.alert("Operação inválida!") } 
+    </script>
+</body>
+
+</html>
